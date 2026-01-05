@@ -193,6 +193,32 @@ const Index = () => {
           </div>
         </Card>
 
+        <Card className="mt-12 p-8 border-yellow-500/50 bg-gradient-to-br from-yellow-500/10 to-orange-500/10 backdrop-blur animate-fade-in relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-500/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-0 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl" />
+          <div className="relative flex items-center gap-6">
+            <div className="w-20 h-20 bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
+              <Icon name="Crown" size={36} className="text-white" />
+            </div>
+            <div className="flex-1">
+              <div className="flex items-center gap-2 mb-2">
+                <Icon name="Star" size={20} className="text-yellow-500" />
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+                  Лучший игрок месяца
+                </h3>
+              </div>
+              <p className="text-xl font-semibold mb-1">Чернов Максим</p>
+              <p className="text-sm text-muted-foreground">Победитель январского турнира</p>
+            </div>
+            <div className="text-right">
+              <div className="text-4xl mb-2">🏆</div>
+              <Badge className="bg-yellow-500/20 text-yellow-400 border-yellow-500/50">
+                MVP
+              </Badge>
+            </div>
+          </div>
+        </Card>
+
         <div className="mt-12 grid md:grid-cols-3 gap-6 animate-fade-in">
           <Card className="p-6 text-center border-border/40 bg-card/50 backdrop-blur hover:border-primary/50 transition-all duration-300">
             <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
