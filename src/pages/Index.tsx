@@ -71,6 +71,14 @@ const Index = () => {
             </h1>
           </div>
           <div className="flex items-center gap-4">
+            <Button 
+              variant="ghost" 
+              size="icon"
+              onClick={() => window.open('https://steamcommunity.com/id/wuskar', '_blank')}
+              className="hover:text-primary transition-colors"
+            >
+              <Icon name="Gamepad2" size={20} />
+            </Button>
             <Button variant="ghost" size="icon">
               <Icon name="Bell" size={20} />
             </Button>
