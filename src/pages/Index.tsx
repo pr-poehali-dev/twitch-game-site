@@ -86,20 +86,16 @@ const Index = () => {
         <div className="grid lg:grid-cols-3 gap-6">
           <div className="lg:col-span-2 space-y-6">
             <Card className="overflow-hidden border-border/40 bg-card/50 backdrop-blur animate-scale-in">
-              <div className="relative aspect-video bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center">
-                {isLive && (
-                  <Badge className="absolute top-4 left-4 bg-red-500 text-white animate-pulse">
-                    <div className="w-2 h-2 bg-white rounded-full mr-2" />
-                    LIVE
-                  </Badge>
-                )}
-                <div className="absolute top-4 right-4 flex items-center gap-2 bg-black/60 backdrop-blur px-3 py-1.5 rounded-lg">
+              <div className="relative aspect-video bg-black">
+                <iframe
+                  src="https://player.twitch.tv/?video=2661833645&parent=localhost&parent=poehali.dev&autoplay=false"
+                  className="w-full h-full"
+                  allowFullScreen
+                  frameBorder="0"
+                />
+                <div className="absolute top-4 right-4 flex items-center gap-2 bg-black/60 backdrop-blur px-3 py-1.5 rounded-lg pointer-events-none">
                   <Icon name="Eye" size={16} className="text-white" />
                   <span className="text-white font-medium">{viewers.toLocaleString()}</span>
-                </div>
-                <div className="text-center animate-fade-in">
-                  <Icon name="Play" size={64} className="text-white/80 mx-auto mb-4" />
-                  <p className="text-white/70 font-medium">Стрим начнется в 20:00</p>
                 </div>
               </div>
               <div className="p-6 space-y-4">
