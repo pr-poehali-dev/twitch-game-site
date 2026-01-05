@@ -161,42 +161,20 @@ const Index = () => {
           </div>
 
           <div className="lg:col-span-1">
-            <Card className="h-[calc(100vh-12rem)] flex flex-col border-border/40 bg-card/50 backdrop-blur animate-scale-in sticky top-24">
+            <Card className="h-[calc(100vh-12rem)] flex flex-col border-border/40 bg-card/50 backdrop-blur animate-scale-in sticky top-24 overflow-hidden">
               <div className="p-4 border-b border-border/40">
                 <h3 className="font-bold text-lg flex items-center gap-2">
                   <Icon name="MessageSquare" size={20} />
-                  Чат стрима
+                  Чат Twitch
                 </h3>
               </div>
-              <ScrollArea className="flex-1 p-4">
-                <div className="space-y-3">
-                  {chatMessages.map((msg) => (
-                    <div
-                      key={msg.id}
-                      className="animate-slide-in p-3 rounded-lg hover:bg-muted/50 transition-colors"
-                    >
-                      <div className="flex items-center justify-between mb-1">
-                        <span className="font-semibold text-sm text-primary">{msg.user}</span>
-                        <span className="text-xs text-muted-foreground">{msg.time}</span>
-                      </div>
-                      <p className="text-sm">{msg.message}</p>
-                    </div>
-                  ))}
-                </div>
-              </ScrollArea>
-              <form onSubmit={handleSendMessage} className="p-4 border-t border-border/40">
-                <div className="flex gap-2">
-                  <Input
-                    value={newMessage}
-                    onChange={(e) => setNewMessage(e.target.value)}
-                    placeholder="Написать сообщение..."
-                    className="flex-1"
-                  />
-                  <Button type="submit" size="icon" className="bg-gradient-to-r from-primary to-secondary">
-                    <Icon name="Send" size={18} />
-                  </Button>
-                </div>
-              </form>
+              <div className="flex-1 bg-background">
+                <iframe
+                  src="https://www.twitch.tv/embed/wuskar999/chat?parent=localhost&parent=poehali.dev&darkpopout"
+                  className="w-full h-full"
+                  frameBorder="0"
+                />
+              </div>
             </Card>
           </div>
         </div>
