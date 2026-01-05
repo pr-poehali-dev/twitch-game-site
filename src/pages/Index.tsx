@@ -201,6 +201,20 @@ const Index = () => {
           </div>
         </div>
 
+        <Card className="mt-8 p-6 border-red-500/50 bg-red-950/20 backdrop-blur animate-fade-in">
+          <div className="flex items-center gap-4">
+            <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
+              <Icon name="ShieldAlert" size={24} className="text-white" />
+            </div>
+            <div>
+              <h3 className="text-lg font-bold text-red-400 mb-1">⛔ Запрещенный список</h3>
+              <p className="text-sm text-muted-foreground">
+                <span className="font-semibold text-red-400">Шилову Александру</span> запрещено посещать стримы
+              </p>
+            </div>
+          </div>
+        </Card>
+
         <div className="mt-12 grid md:grid-cols-3 gap-6 animate-fade-in">
           <Card className="p-6 text-center border-border/40 bg-card/50 backdrop-blur hover:border-primary/50 transition-all duration-300">
             <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
