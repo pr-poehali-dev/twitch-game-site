@@ -67,7 +67,7 @@ const Index = () => {
               <Icon name="Tv" size={24} className="text-white" />
             </div>
             <h1 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              StreamZone
+              wuskar999
             </h1>
           </div>
           <div className="flex items-center gap-4">
@@ -105,7 +105,7 @@ const Index = () => {
               <div className="p-6 space-y-4">
                 <div className="flex items-start justify-between">
                   <div className="space-y-2">
-                    <h2 className="text-2xl font-bold">Valorant Ranked Grind 🔥</h2>
+                    <h2 className="text-2xl font-bold">Стрим wuskar999 🔥</h2>
                     <div className="flex items-center gap-3 text-sm text-muted-foreground">
                       <div className="flex items-center gap-1">
                         <Icon name="Gamepad2" size={16} />
